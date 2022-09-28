@@ -5,14 +5,14 @@ File_2=TSourceModule,'c:\program files (x86)\embarcadero\studio\22.0\SOURCE\RTL\
 
 [Modules]
 Module0=C:\Users\alesa\Desktop\.-.--\mobile\UnitLogin.pas
-Module1=C:\Users\alesa\Desktop\.-.--\mobile\untPrincipal.pas
+Module1=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\untPrincipal.pas
 Count=2
 EditWindowCount=1
 
 [C:\Users\alesa\Desktop\.-.--\mobile\UnitLogin.pas]
 ModuleType=TSourceModule
 
-[C:\Users\alesa\Desktop\.-.--\mobile\untPrincipal.pas]
+[C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\untPrincipal.pas]
 ModuleType=TSourceModule
 
 [EditWindow0]
@@ -53,24 +53,24 @@ TabDockRightClients=DockSite3=0
 [View0]
 CustomEditViewType=TEditView
 Module=C:\Users\alesa\Desktop\.-.--\mobile\UnitLogin.pas
-CursorX=50
-CursorY=60
-TopLine=44
+CursorX=70
+CursorY=89
+TopLine=71
 LeftCol=1
 Elisions=
 Bookmarks=
-EditViewName=C:\Users\alesa\Desktop\.-.--\mobile\UnitLogin.pas
+EditViewName=Borland.FormDesignerView
 
 [View1]
 CustomEditViewType=TEditView
-Module=C:\Users\alesa\Desktop\.-.--\mobile\untPrincipal.pas
-CursorX=16
-CursorY=39
+Module=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\untPrincipal.pas
+CursorX=1
+CursorY=1
 TopLine=1
 LeftCol=1
 Elisions=
 Bookmarks=
-EditViewName=C:\Users\alesa\Desktop\.-.--\mobile\untPrincipal.pas
+EditViewName=Borland.FormDesignerView
 
 [Watches]
 Count=1
@@ -161,7 +161,7 @@ Visible=0
 Docked=1
 State=0
 Left=0
-Top=28
+Top=0
 Width=2765
 Height=1415
 MaxLeft=-1
@@ -182,11 +182,11 @@ State=0
 Left=0
 Top=0
 Width=2000
-Height=8187
+Height=8159
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
-ClientHeight=8187
+ClientHeight=8159
 TBDockHeight=7157
 LRDockWidth=2000
 Dockable=1
@@ -201,11 +201,11 @@ State=0
 Left=0
 Top=28
 Width=1897
-Height=8269
+Height=8187
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=1897
-ClientHeight=8269
+ClientHeight=8187
 TBDockHeight=8187
 LRDockWidth=1897
 Dockable=1
@@ -214,8 +214,8 @@ SplitPos=111
 
 [PropInspDesignerSelection]
 ArrangeBy=Name
-SelectedItem=Text,
-ExpandedItems=ActiveControl=0,Border=0,BorderIcons=0,Constraints=0,Fill=0,FormFactor=0,"LiveBindings Designer=0",Padding=0,ActiveTab=0,Anchors=0,LiveBindings=0,Margins=0,Position=0,RotationCenter=0,Scale=0,Size=0,Touch=0,TouchTargetExpansion=0,StyledSettings=0,TextSettings=0
+SelectedItem=Active,ActiveTab
+ExpandedItems=ConnectedStoredUsage=0,FetchOptions=0,FormatOptions=0,"LiveBindings Designer=0",Params=0,ResourceOptions=0,TxOptions=0,UpdateOptions=0,ActiveTab=0,Anchors=0,LiveBindings=0,Margins=0,Padding=0,ActiveTab.LiveBindings=0
 
 [frmDesignPreview]
 PercentageSizes=1
@@ -654,7 +654,7 @@ Dockable=1
 StayOnTop=0
 TabPosition=1
 ActiveTabID=StructureView
-TabDockClients=ProjectManager,StructureView,DataExplorerContainer,frmDesignPreview,ModelViewTool,ClassBrowserTool
+TabDockClients=ProjectManager,StructureView,DataExplorerContainer,frmDesignPreview,ClassBrowserTool,ModelViewTool
 
 [DockSite3]
 HostDockSite=RightTabDock
@@ -664,14 +664,14 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=8
-Top=8
+Left=4
+Top=29
 Width=2000
-Height=8187
+Height=8159
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
-ClientHeight=8187
+ClientHeight=8159
 TBDockHeight=8187
 LRDockWidth=2000
 Dockable=1
