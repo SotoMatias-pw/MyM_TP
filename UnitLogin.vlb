@@ -4,6 +4,6 @@ LayerNames="select * from  e-commerce "
 [Module Settings]
 ModelLayerNames=SQLQuery1;"select * from  e-commerce ";"select * from tienda";select;*;from;tienda
 
-[SQLQuery1]
+[]
 LayerNames="select * from tienda"
 

@@ -51,8 +51,7 @@ type
     Rectangle2: TRectangle;
     Edit10: TEdit;
     FDConnection1: TFDConnection;
-    DataSource1: TDataSource;
-    FDQuery1: TFDQuery;
+    SQLQuery1: TSQLQuery;
     procedure SQLQuery1ParseInsertSql(var FieldNames: TStrings; SQL: string;
       var BindAllFields: Boolean; var TableName: string);
     procedure EntrarClick(Sender: TObject);
