@@ -1,0 +1,72 @@
+unit untPrincipal;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Objects,
+  FMX.Layouts, FMX.Controls.Presentation, FMX.StdCtrls, FMX.Edit,
+  FMX.ListView.Types, FMX.ListView.Appearances, FMX.ListView.Adapters.Base,
+  FMX.ListView;
+
+type
+  TFmPrincipal = class(TForm)
+    lyTooBar: TLayout;
+    ImgBackMenu: TImage;
+    Image2: TImage;
+    Label1: TLabel;
+    lyBusqueda: TLayout;
+    StyleBook1: TStyleBook;
+    rectBusqueda: TRectangle;
+    Edit1: TEdit;
+    Image3: TImage;
+    Buscar: TButton;
+    lySwitch: TLayout;
+    rectSwitch: TRectangle;
+    Rectangle2: TRectangle;
+    Label2: TLabel;
+    Label3: TLabel;
+    lvListaStore: TListView;
+    RecMenu: TRectangle;
+    Image4: TImage;
+    backMenu: TImage;
+    Label4: TLabel;
+    Label5: TLabel;
+    Rectangle1: TRectangle;
+    Label6: TLabel;
+    Rectangle3: TRectangle;
+    Label7: TLabel;
+    Rectangle4: TRectangle;
+    Label8: TLabel;
+    procedure ImgBackMenuClick(Sender: TObject);
+    procedure backMenuClick(Sender: TObject);
+  private
+    procedure OpenMenu(ind: boolean);
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FmPrincipal: TFmPrincipal;
+
+implementation
+ uses UnitLogin;
+{$R *.fmx}
+
+procedure TFmPrincipal.OpenMenu(ind: boolean);
+begin
+   RecMenu.Visible := ind;
+end;
+
+procedure TFmPrincipal.backMenuClick(Sender: TObject);
+begin
+    OpenMenu(False);
+end;
+
+procedure TFmPrincipal.ImgBackMenuClick(Sender: TObject);
+begin
+     OpenMenu (True);
+end;
+
+end.

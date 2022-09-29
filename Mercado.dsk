@@ -1,25 +1,30 @@
 ﻿[Closed Files]
-File_0=TSourceModule,'c:\program files (x86)\embarcadero\studio\22.0\source\fmx\FMX.TabControl.pas',0,1,311,1,329,0,0,,
-File_1=TSourceModule,'c:\program files (x86)\embarcadero\studio\22.0\source\fmx\FMX.Forms.pas',0,1,1137,1,1155,0,0,,
-File_2=TSourceModule,'c:\program files (x86)\embarcadero\studio\22.0\SOURCE\RTL\SYS\System.pas',0,1,652,1,670,0,0,,
+File_0=TSourceModule,'C:\Users\alesa\Desktop\.-.--\mobile\UnitLogin.pas',0,1,71,69,89,0,0,,
+File_1=TSourceModule,'c:\program files (x86)\embarcadero\studio\22.0\source\fmx\FMX.TabControl.pas',0,1,311,1,329,0,0,,
+File_2=TSourceModule,'c:\program files (x86)\embarcadero\studio\22.0\source\fmx\FMX.Forms.pas',0,1,1137,1,1155,0,0,,
 
 [Modules]
-Module0=C:\Users\alesa\Desktop\.-.--\mobile\UnitLogin.pas
-Module1=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\untPrincipal.pas
-Count=2
+Module0=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\untPrincipal.pas
+Module1=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\untClientes.pas
+Module2=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\UnitLogin.pas
+Count=3
 EditWindowCount=1
-
-[C:\Users\alesa\Desktop\.-.--\mobile\UnitLogin.pas]
-ModuleType=TSourceModule
 
 [C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\untPrincipal.pas]
 ModuleType=TSourceModule
 
+[C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\untClientes.pas]
+ModuleType=TSourceModule
+
+[C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\UnitLogin.pas]
+ModuleType=TSourceModule
+
 [EditWindow0]
-ViewCount=2
-CurrentEditView=C:\Users\alesa\Desktop\.-.--\mobile\UnitLogin.pas
+ViewCount=3
+CurrentEditView=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\untPrincipal.pas
 View0=0
 View1=1
+View2=2
 PercentageSizes=1
 Create=1
 Visible=1
@@ -52,10 +57,10 @@ TabDockRightClients=DockSite3=0
 
 [View0]
 CustomEditViewType=TEditView
-Module=C:\Users\alesa\Desktop\.-.--\mobile\UnitLogin.pas
-CursorX=70
-CursorY=89
-TopLine=71
+Module=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\UnitLogin.pas
+CursorX=1
+CursorY=93
+TopLine=90
 LeftCol=1
 Elisions=
 Bookmarks=
@@ -65,8 +70,19 @@ EditViewName=Borland.FormDesignerView
 CustomEditViewType=TEditView
 Module=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\untPrincipal.pas
 CursorX=1
-CursorY=1
-TopLine=1
+CursorY=94
+TopLine=92
+LeftCol=1
+Elisions=
+Bookmarks=
+EditViewName=Borland.FormDesignerView
+
+[View2]
+CustomEditViewType=TEditView
+Module=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\untClientes.pas
+CursorX=1
+CursorY=36
+TopLine=34
 LeftCol=1
 Elisions=
 Bookmarks=
@@ -161,7 +177,7 @@ Visible=0
 Docked=1
 State=0
 Left=0
-Top=0
+Top=28
 Width=2765
 Height=1415
 MaxLeft=-1
@@ -182,11 +198,11 @@ State=0
 Left=0
 Top=0
 Width=2000
-Height=8159
+Height=8187
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
-ClientHeight=8159
+ClientHeight=8187
 TBDockHeight=7157
 LRDockWidth=2000
 Dockable=1
@@ -214,8 +230,8 @@ SplitPos=111
 
 [PropInspDesignerSelection]
 ArrangeBy=Name
-SelectedItem=Active,ActiveTab
-ExpandedItems=ConnectedStoredUsage=0,FetchOptions=0,FormatOptions=0,"LiveBindings Designer=0",Params=0,ResourceOptions=0,TxOptions=0,UpdateOptions=0,ActiveTab=0,Anchors=0,LiveBindings=0,Margins=0,Padding=0,ActiveTab.LiveBindings=0
+SelectedItem=Text,
+ExpandedItems=Anchors=0,ItemAppearance=0,ItemAppearanceObjects=0,ItemSpaces=0,LiveBindings=0,"LiveBindings Designer=0",Margins=0,NativeOptions=0,Padding=0,Position=0,RotationCenter=0,Scale=0,Size=0,Touch=0,TouchTargetExpansion=0,Touch.GestureManager=0,Touch.Gestures=1,Touch.InteractiveGestures=0,Touch.Gestures.Standard=1,StyledSettings=0,TextSettings=0,Corners=0,Fill=1,Sides=0,Stroke=0,Fill.Bitmap=0,Fill.Resource=0,Fill.Bitmap.Image=0,Stroke.Bitmap=0,Stroke.Resource=0,Constraints=0,FormFactor=0,SystemStatusBar=0,Border=0,BorderIcons=0
 
 [frmDesignPreview]
 PercentageSizes=1
@@ -226,11 +242,11 @@ State=0
 Left=0
 Top=0
 Width=2000
-Height=7802
+Height=4959
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
-ClientHeight=7802
+ClientHeight=4959
 TBDockHeight=5962
 LRDockWidth=2507
 Dockable=1
@@ -412,11 +428,11 @@ State=0
 Left=0
 Top=0
 Width=2000
-Height=7802
+Height=4959
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
-ClientHeight=7802
+ClientHeight=4959
 TBDockHeight=4876
 LRDockWidth=7154
 Dockable=1
@@ -654,7 +670,7 @@ Dockable=1
 StayOnTop=0
 TabPosition=1
 ActiveTabID=StructureView
-TabDockClients=ProjectManager,StructureView,DataExplorerContainer,frmDesignPreview,ClassBrowserTool,ModelViewTool
+TabDockClients=ProjectManager,StructureView,DataExplorerContainer,frmDesignPreview,ModelViewTool,ClassBrowserTool
 
 [DockSite3]
 HostDockSite=RightTabDock
@@ -664,14 +680,14 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=4
-Top=29
+Left=8
+Top=8
 Width=2000
-Height=8159
+Height=8187
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
-ClientHeight=8159
+ClientHeight=8187
 TBDockHeight=8187
 LRDockWidth=2000
 Dockable=1

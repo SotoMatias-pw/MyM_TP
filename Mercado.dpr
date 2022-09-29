@@ -4,7 +4,9 @@ uses
   System.StartUpCopy,
   FMX.Forms,
   UnitLogin in 'UnitLogin.pas' {FLogin},
-  untPrincipal in 'untPrincipal.pas' {FmPrincipal};
+  untPrincipal in 'untPrincipal.pas' {FmPrincipal},
+  untClientes in 'untClientes.pas' {Form1},
+  untMarcoClient in 'untMarcoClient.pas' {ClientCard: TFrame};
 
 {$R *.res}
 
@@ -12,5 +14,6 @@ begin
   Application.Initialize;
   Application.CreateForm(TFLogin, FLogin);
   Application.CreateForm(TFmPrincipal, FmPrincipal);
+  Application.CreateForm(TForm1, Form1);
   Application.Run;
 end.

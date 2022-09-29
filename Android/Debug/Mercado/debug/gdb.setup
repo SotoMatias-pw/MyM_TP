@@ -1,0 +1,4 @@
+set solib-search-path .
+set breakpoint pending on
+file libMercado.so
+target remote :61913

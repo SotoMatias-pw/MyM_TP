@@ -3,25 +3,31 @@
 	<Transactions>
     <Transaction>2022/09/02 13:35:42.000.634,=C:\Users\alesa\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2022/09/09 09:44:58.000.470,=C:\Users\alesa\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2022/09/09 11:10:54.000.607,C:\Users\alesa\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\alesa\Desktop\.-.--\mobile\UnitLogin.pas</Transaction>
-    <Transaction>2022/09/09 11:10:54.000.607,C:\Users\alesa\Documents\Embarcadero\Studio\Projects\Unit1.fmx=C:\Users\alesa\Desktop\.-.--\mobile\UnitLogin.fmx</Transaction>
-    <Transaction>2022/09/09 11:11:04.000.419,C:\Users\alesa\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\alesa\Desktop\.-.--\mobile\Mercado.dproj</Transaction>
+    <Transaction>2022/09/09 11:10:54.000.607,C:\Users\alesa\Desktop\.-.--\mobile\UnitLogin.fmx=C:\Users\alesa\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2022/09/09 11:10:54.000.607,C:\Users\alesa\Desktop\.-.--\mobile\UnitLogin.pas=C:\Users\alesa\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/09/09 11:11:04.000.419,C:\Users\alesa\Desktop\.-.--\mobile\Mercado.dproj=C:\Users\alesa\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
     <Transaction>2022/09/12 14:26:37.000.062,=C:\Users\alesa\Desktop\.-.--\mobile\Unit1.pas</Transaction>
-    <Transaction>2022/09/12 14:27:38.000.667,C:\Users\alesa\Desktop\.-.--\mobile\MercadoDataModule.pas=C:\Users\alesa\Desktop\.-.--\mobile\Unit1.pas</Transaction>
-    <Transaction>2022/09/12 14:27:38.000.667,C:\Users\alesa\Desktop\.-.--\mobile\MercadoDataModule.dfm=C:\Users\alesa\Desktop\.-.--\mobile\Unit1.dfm</Transaction>
+    <Transaction>2022/09/12 14:27:38.000.667,C:\Users\alesa\Desktop\.-.--\mobile\Unit1.dfm=C:\Users\alesa\Desktop\.-.--\mobile\MercadoDataModule.dfm</Transaction>
+    <Transaction>2022/09/12 14:27:38.000.667,C:\Users\alesa\Desktop\.-.--\mobile\Unit1.pas=C:\Users\alesa\Desktop\.-.--\mobile\MercadoDataModule.pas</Transaction>
     <Transaction>2022/09/13 10:23:20.000.266,C:\Users\alesa\Desktop\.-.--\mobile\MercadoDataModule.pas=</Transaction>
     <Transaction>2022/09/13 10:28:14.000.890,=C:\Users\alesa\Desktop\.-.--\mobile\Unit1.pas</Transaction>
-    <Transaction>2022/09/13 10:30:01.000.748,C:\Users\alesa\Desktop\.-.--\mobile\UnitPrinecial.fmx=C:\Users\alesa\Desktop\.-.--\mobile\Unit1.fmx</Transaction>
-    <Transaction>2022/09/13 10:30:01.000.748,C:\Users\alesa\Desktop\.-.--\mobile\UnitPrinecial.pas=C:\Users\alesa\Desktop\.-.--\mobile\Unit1.pas</Transaction>
+    <Transaction>2022/09/13 10:30:01.000.748,C:\Users\alesa\Desktop\.-.--\mobile\Unit1.pas=C:\Users\alesa\Desktop\.-.--\mobile\UnitPrinecial.pas</Transaction>
+    <Transaction>2022/09/13 10:30:01.000.748,C:\Users\alesa\Desktop\.-.--\mobile\Unit1.fmx=C:\Users\alesa\Desktop\.-.--\mobile\UnitPrinecial.fmx</Transaction>
     <Transaction>2022/09/14 09:54:20.000.943,=C:\Users\alesa\Desktop\.-.--\service\Unit1.pas</Transaction>
     <Transaction>2022/09/14 09:54:21.000.037,=C:\Users\alesa\Desktop\.-.--\service\Android\Debug\Serv.jar</Transaction>
-    <Transaction>2022/09/14 11:23:44.000.787,C:\Users\alesa\Desktop\.-.--\service\Unit1.pas=C:\Users\alesa\Desktop\.-.--\service\uDMService.pas</Transaction>
-    <Transaction>2022/09/14 11:23:44.000.787,C:\Users\alesa\Desktop\.-.--\service\Unit1.dfm=C:\Users\alesa\Desktop\.-.--\service\uDMService.dfm</Transaction>
+    <Transaction>2022/09/14 11:23:44.000.787,C:\Users\alesa\Desktop\.-.--\service\uDMService.pas=C:\Users\alesa\Desktop\.-.--\service\Unit1.pas</Transaction>
+    <Transaction>2022/09/14 11:23:44.000.787,C:\Users\alesa\Desktop\.-.--\service\uDMService.dfm=C:\Users\alesa\Desktop\.-.--\service\Unit1.dfm</Transaction>
     <Transaction>2022/09/26 11:56:40.000.583,=C:\Users\alesa\Desktop\.-.--\mobile\Unit2.pas</Transaction>
-    <Transaction>2022/09/26 11:57:55.000.022,C:\Users\alesa\Desktop\.-.--\mobile\untPrincipal.fmx=C:\Users\alesa\Desktop\.-.--\mobile\Unit2.fmx</Transaction>
-    <Transaction>2022/09/26 11:57:55.000.022,C:\Users\alesa\Desktop\.-.--\mobile\untPrincipal.pas=C:\Users\alesa\Desktop\.-.--\mobile\Unit2.pas</Transaction>
+    <Transaction>2022/09/26 11:57:55.000.022,C:\Users\alesa\Desktop\.-.--\mobile\Unit2.pas=C:\Users\alesa\Desktop\.-.--\mobile\untPrincipal.pas</Transaction>
+    <Transaction>2022/09/26 11:57:55.000.022,C:\Users\alesa\Desktop\.-.--\mobile\Unit2.fmx=C:\Users\alesa\Desktop\.-.--\mobile\untPrincipal.fmx</Transaction>
+    <Transaction>2022/09/29 09:42:13.000.362,=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\Unit1.pas</Transaction>
+    <Transaction>2022/09/29 09:47:48.000.644,C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\Unit1.pas=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\untClientes.pas</Transaction>
+    <Transaction>2022/09/29 09:47:48.000.644,C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\Unit1.fmx=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\untClientes.fmx</Transaction>
+    <Transaction>2022/09/29 11:13:16.598,=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\Unit1.pas</Transaction>
+    <Transaction>2022/09/29 11:33:38.609,C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\untMarcoClient.pas=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\Unit1.pas</Transaction>
+    <Transaction>2022/09/29 11:33:38.610,C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\untMarcoClient.fmx=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\Unit1.fmx</Transaction>
   </Transactions>
 	<ActiveMobileDevice>
-		<NoProfile Android="" Android64=""/>
+		<NoProfile Android="ZE222NK5LF" Android64="ZE222NK5LF"/>
 	</ActiveMobileDevice>
 </BorlandProject>
