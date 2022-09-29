@@ -220,7 +220,7 @@
             <FormType>fmx</FormType>
         </DCCReference>
         <DCCReference Include="untClientes.pas">
-            <Form>Form1</Form>
+            <Form>fmClientes</Form>
             <FormType>fmx</FormType>
         </DCCReference>
         <DCCReference Include="untMarcoClient.pas">

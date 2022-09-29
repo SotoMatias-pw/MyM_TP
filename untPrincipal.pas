@@ -47,6 +47,10 @@ type
     procedure backMenuClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure Image1Click(Sender: TObject);
+    procedure lvListaStoreItemClick(const Sender: TObject;
+      const AItem: TListViewItem);
+    procedure Rectangle1Click(Sender: TObject);
+
   private
     procedure OpenMenu(ind: boolean);
     { Private declarations }
@@ -58,12 +62,19 @@ var
   FmPrincipal: TFmPrincipal;
 
 implementation
- uses UnitLogin;
+ uses UnitLogin, untClientes, untMarcoClient;
 {$R *.fmx}
 
 procedure TFmPrincipal.OpenMenu(ind: boolean);
 begin
    RecMenu.Visible := ind;
+end;
+
+procedure TFmPrincipal.Rectangle1Click(Sender: TObject);
+var untClientes : TfmClientes;
+begin
+    untClientes := TfmClientes.Create(Application);
+    untClientes.Show;
 end;
 
 procedure TFmPrincipal.backMenuClick(Sender: TObject);
@@ -77,7 +88,7 @@ end;
 
 procedure TFmPrincipal.FormCreate(Sender: TObject);
 begin
-    RecMenu.Visible := True;
+    RecMenu.Visible := false;
 end;
 
 
@@ -96,6 +107,15 @@ begin
                            TAnimationType.InOut,
                            TInterpolationType.Circular);
      RecMenu.Tag := 1;
+end;
+
+procedure TFmPrincipal.lvListaStoreItemClick(const Sender: TObject;
+  const AItem: TListViewItem);
+begin
+   if not Assigned(fmClientes) then
+      Application.CreateForm(TfmClientes, fmClientes);
+
+      fmClientes.Show;
 end;
 
 end.

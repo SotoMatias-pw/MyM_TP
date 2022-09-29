@@ -1,7 +1,7 @@
 object ClientCard: TClientCard
   HitTest = False
-  Size.Width = 217.000000000000000000
-  Size.Height = 247.000000000000000000
+  Size.Width = 248.000000000000000000
+  Size.Height = 231.000000000000000000
   Size.PlatformDefault = False
   object Label3: TLabel
     Align = Bottom
@@ -9,8 +9,8 @@ object ClientCard: TClientCard
     Margins.Left = 8.000000000000000000
     Margins.Right = 8.000000000000000000
     Position.X = 8.000000000000000000
-    Position.Y = 157.000000000000000000
-    Size.Width = 201.000000000000000000
+    Position.Y = 141.000000000000000000
+    Size.Width = 232.000000000000000000
     Size.Height = 30.000000000000000000
     Size.PlatformDefault = False
     TextSettings.Font.Size = 16.000000000000000000
@@ -25,8 +25,8 @@ object ClientCard: TClientCard
     Margins.Left = 8.000000000000000000
     Margins.Right = 8.000000000000000000
     Position.X = 8.000000000000000000
-    Position.Y = 187.000000000000000000
-    Size.Width = 201.000000000000000000
+    Position.Y = 171.000000000000000000
+    Size.Width = 232.000000000000000000
     Size.Height = 30.000000000000000000
     Size.PlatformDefault = False
     TextSettings.Font.Size = 16.000000000000000000
@@ -499,8 +499,8 @@ object ClientCard: TClientCard
     Margins.Left = 8.000000000000000000
     Margins.Right = 8.000000000000000000
     Position.X = 8.000000000000000000
-    Position.Y = 217.000000000000000000
-    Size.Width = 201.000000000000000000
+    Position.Y = 201.000000000000000000
+    Size.Width = 232.000000000000000000
     Size.Height = 30.000000000000000000
     Size.PlatformDefault = False
     TextSettings.Font.StyleExt = {00070000000000000004000000}
@@ -2183,8 +2183,8 @@ object ClientCard: TClientCard
     Margins.Top = 10.000000000000000000
     Margins.Right = 10.000000000000000000
     Margins.Bottom = 10.000000000000000000
-    Size.Width = 197.000000000000000000
-    Size.Height = 137.000000000000000000
+    Size.Width = 228.000000000000000000
+    Size.Height = 121.000000000000000000
     Size.PlatformDefault = False
   end
 end

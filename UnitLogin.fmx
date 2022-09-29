@@ -95,7 +95,7 @@ object FLogin: TFLogin
             Size.Width = 273.000000000000000000
             Size.Height = 32.000000000000000000
             Size.PlatformDefault = False
-            TextPrompt = 'E-mail'
+            TextPrompt = 'Usuario'
             StyledSettings = [Family, Style, FontColor]
           end
         end

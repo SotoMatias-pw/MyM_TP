@@ -5,7 +5,7 @@ uses
   FMX.Forms,
   UnitLogin in 'UnitLogin.pas' {FLogin},
   untPrincipal in 'untPrincipal.pas' {FmPrincipal},
-  untClientes in 'untClientes.pas' {Form1},
+  untClientes in 'untClientes.pas' {fmClientes},
   untMarcoClient in 'untMarcoClient.pas' {ClientCard: TFrame};
 
 {$R *.res}
@@ -14,6 +14,6 @@ begin
   Application.Initialize;
   Application.CreateForm(TFLogin, FLogin);
   Application.CreateForm(TFmPrincipal, FmPrincipal);
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TfmClientes, fmClientes);
   Application.Run;
 end.
