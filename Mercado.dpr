@@ -6,7 +6,7 @@ uses
   UnitLogin in 'UnitLogin.pas' {FLogin},
   untPrincipal in 'untPrincipal.pas' {FmPrincipal},
   untClientes in 'untClientes.pas' {fmClientes},
-  untMarcoClient in 'untMarcoClient.pas' {ClientCard: TFrame};
+  Frame.ClienteCard in 'Frames\Frame.ClienteCard.pas' {ClienteCard: TFrame};
 
 {$R *.res}
 

@@ -31,9 +31,10 @@ type
     lbClientes: TListBox;
     procedure FormShow(Sender: TObject);
   private
-    procedure LisarClientes;
     procedure AddCliente(id_cliente: integer; direccion, nombre: string;
       telefono: double);
+    procedure ListarClientes;
+
     { Private declarations }
   public
     { Public declarations }
@@ -45,39 +46,38 @@ var
 implementation
 
 {$R *.fmx}
-uses untPrincipal, untMarcoClient;
+uses untPrincipal;
 
-procedure  TfmClientes.AddCliente(id_cliente: integer;
-                                   direccion, nombre: string;
-                                   telefono: double);
-var
-   item: TListBoxItem;
-   frame: TfmClientes;
+procedure TfmClientes.AddCliente(id_cliente: integer;
+                                 direccion, nombre: string;
+                                 telefono: double);
+   var
+      item: TListBoxItem;
+      frame: TFrame;
 begin
-    item := TListBoxItem.Create(lbClientes);
-    item.Selectable := false;
-    item.Text := '';
-    item.height := 231;
-    item.Tag := id_cliente;
-end;
-
-procedure  TfmClientes.LisarClientes;
-begin
-         // Accede a datos en segundo plano CARD CLIENTE
-
-    AddCliente(0, 'Dir.Teodoro Planas 4141', 'Makro', 111-222-333);
-    AddCliente(0, 'Dir.Teodoro Planas 4141', 'Makro', 111-222-333);
-    AddCliente(0, 'Dir.Teodoro Planas 4141', 'Makro', 111-222-333);
-    AddCliente(0, 'Dir.Teodoro Planas 4141', 'Makro', 111-222-333);
-    AddCliente(0, 'Dir.Teodoro Planas 4141', 'Makro', 111-222-333);
-    AddCliente(0, 'Dir.Teodoro Planas 4141', 'Makro', 111-222-333)
+   item:= TListBoxItem.Create(lbClientes);
+   item.Selectable := false;
+   item.Text := '';
+   item.Height := 200;
+   item.Tag := id_cliente;
 
 end;
 
+procedure TfmClientes.ListarClientes;
+
+begin
+            // Acceder a datos de card clientes
+
+    AddCliente(0, 'Dir. Teodoro Planas 4141', 'Makro', 111-222-333);
+    AddCliente(0, 'Dir. Teodoro Planas 4141', 'Makro', 111-222-333);
+    AddCliente(0, 'Dir. Teodoro Planas 4141', 'Makro', 111-222-333);
+    AddCliente(0, 'Dir. Teodoro Planas 4141', 'Makro', 111-222-333);
+    AddCliente(0, 'Dir. Teodoro Planas 4141', 'Makro', 111-222-333);
+end;
 
 procedure TfmClientes.FormShow(Sender: TObject);
 begin
-   LisarClientes;
+   ListarClientes;
 end;
 
 end.
