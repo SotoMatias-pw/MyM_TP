@@ -5,7 +5,9 @@
     <Transaction>2022/09/20 16:52:08.000.698,=C:\Users\alesa\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
     <Transaction>2022/09/26 10:01:29.000.365,=C:\Users\alesa\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2022/10/03 14:29:36.000.340,=C:\Users\alesa\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2022/10/03 14:30:27.000.793,C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\Mercado.dproj=C:\Users\alesa\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
-  </Transactions>  <ActiveMobileDevice>   <NoProfile Android=""/>
-  </ActiveMobileDevice>
+    <Transaction>2022/10/03 14:30:27.000.793,C:\Users\alesa\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\Mercado.dproj</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile Android=""/>
+	</ActiveMobileDevice>
 </BorlandProject>

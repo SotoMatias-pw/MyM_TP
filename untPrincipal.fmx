@@ -1572,6 +1572,7 @@ object FmPrincipal: TFmPrincipal
         AppearanceClassName = 'TTextObjectAppearance'
       end>
     CanSwipeDelete = False
+    OnItemClick = lvListaStoreItemClick
     ShowSelection = False
   end
   object RecMenu: TRectangle

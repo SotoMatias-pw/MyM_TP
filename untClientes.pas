@@ -29,11 +29,12 @@ type
     Rectangle4: TRectangle;
     Label5: TLabel;
     lbClientes: TListBox;
+    StyleBook1: TStyleBook;
     procedure FormShow(Sender: TObject);
   private
+    procedure ListarClientes;
     procedure AddCliente(id_cliente: integer; direccion, nombre: string;
       telefono: double);
-    procedure ListarClientes;
 
     { Private declarations }
   public
@@ -46,14 +47,14 @@ var
 implementation
 
 {$R *.fmx}
-uses untPrincipal;
+uses untPrincipal, Frame.ClienteCard;
 
 procedure TfmClientes.AddCliente(id_cliente: integer;
                                  direccion, nombre: string;
                                  telefono: double);
    var
       item: TListBoxItem;
-      frame: TFrame;
+      frame: TClienteCard;
 begin
    item:= TListBoxItem.Create(lbClientes);
    item.Selectable := false;
@@ -61,6 +62,17 @@ begin
    item.Height := 200;
    item.Tag := id_cliente;
 
+
+   // ACA SE MUESTRAN LOS MARCOS/CARDS
+    frame := TClienteCard.Create(item);
+    //frame.imgTienda;
+    frame.lbNombre.Text := nombre;
+    frame.lbUbi.Text := direccion;
+    frame.lbTel.Text := '111-222-333';
+
+    item.AddObject(frame);
+
+   lbClientes.AddObject(item);
 end;
 
 procedure TfmClientes.ListarClientes;
@@ -73,6 +85,8 @@ begin
     AddCliente(0, 'Dir. Teodoro Planas 4141', 'Makro', 111-222-333);
     AddCliente(0, 'Dir. Teodoro Planas 4141', 'Makro', 111-222-333);
     AddCliente(0, 'Dir. Teodoro Planas 4141', 'Makro', 111-222-333);
+    AddCliente(0, 'Dir. Teodoro Planas 4141', 'Makro', 111-222-333);
+
 end;
 
 procedure TfmClientes.FormShow(Sender: TObject);

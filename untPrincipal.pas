@@ -52,6 +52,8 @@ type
     procedure Image1Click(Sender: TObject);
     procedure Rectangle1Click(Sender: TObject);
     procedure FormShow(Sender: TObject);
+    procedure lvListaStoreItemClick(const Sender: TObject;
+      const AItem: TListViewItem);
 
 
   private
@@ -86,6 +88,7 @@ begin
    with lvListaStore.Items.Add do
    begin
       height := 120;
+      Tag := id_cliente;
 
       // Devuelve y captura los item IMG
 
@@ -149,8 +152,20 @@ begin
     AddClienteLV(0, 'CEDISA', 'Minorista', 'Dir. Teodoro Planas 4141', 111-222-333);
     AddClienteLV(0, 'Distribuidora Barelu', 'Distribuidora de Cerveza', 'Dir. Teodoro Planas 4141', 111-222-333);
     AddClienteLV(0, 'Coca Cola NQN', 'Distribuidora de CocaCola', 'Dir. Teodoro Planas 4141', 111-222-333);
+    AddClienteLV(0, 'Makro', 'Mayorista', 'Dir. Teodoro Planas 4141', 111-222-333);
+    AddClienteLV(0, 'CEDISA', 'Minorista', 'Dir. Teodoro Planas 4141', 111-222-333);
+    AddClienteLV(0, 'Distribuidora Barelu', 'Distribuidora de Cerveza', 'Dir. Teodoro Planas 4141', 111-222-333);
+    AddClienteLV(0, 'Coca Cola NQN', 'Distribuidora de CocaCola', 'Dir. Teodoro Planas 4141', 111-222-333);
 end;
 
+
+procedure TFmPrincipal.lvListaStoreItemClick(const Sender: TObject;
+  const AItem: TListViewItem);
+begin
+    if NOT Assigned(fmClientes) then
+      Application.CreateForm(TfmClientes, fmClientes);
+
+end;
 
 procedure TFmPrincipal.FormShow(Sender: TObject);
 begin

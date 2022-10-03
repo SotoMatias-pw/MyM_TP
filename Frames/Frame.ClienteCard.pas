@@ -9,12 +9,12 @@ uses
 
 type
   TClienteCard = class(TFrame)
-    Label3: TLabel;
-    Image1: TImage;
-    Label1: TLabel;
-    Label2: TLabel;
+    lbTel: TLabel;
+    lbNombre: TLabel;
+    lbUbi: TLabel;
     Image3: TImage;
-    Image2: TImage;
+    imgTienda: TImage;
+    Z: TImage;
   private
     { Private declarations }
   public
