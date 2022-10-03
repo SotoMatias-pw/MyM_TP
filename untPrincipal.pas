@@ -56,7 +56,7 @@ type
 
   private
     procedure OpenMenu(ind: boolean);
-    procedure AddClienteLV(id_cliente: integer; nombre, direccion: string;
+    procedure AddClienteLV(id_cliente: integer; nombre, categoria, direccion: string;
       telefono: double);
     procedure ListarClientes;
     { Private declarations }
@@ -73,7 +73,7 @@ implementation
 
 // Se agregan valores de Lista clientes
 procedure TFmPrincipal.AddClienteLV(id_cliente: integer;
-                                    nombre, direccion: string;
+                                    nombre, categoria, direccion: string;
                                     telefono: double);
 
      //Camptura la imagen que tiene la vista
@@ -87,6 +87,8 @@ begin
    begin
       height := 120;
 
+      // Devuelve y captura los item IMG
+
       img := TListItemImage(Objects.FindDrawable('imgLocal'));
       img.Bitmap := imgLocal.Bitmap;
 
@@ -95,6 +97,20 @@ begin
 
       img := TListItemImage(Objects.FindDrawable('imgUbic'));
       img.Bitmap := imgUbic.Bitmap;
+
+      //Devuelve y captura las caracteristicas de cada item IMG
+
+      txt := TListItemText(Objects.FindDrawable('txtNombre'));
+      txt.Text :=  nombre;
+
+      txt := TListItemText(Objects.FindDrawable('txtCategoria'));
+      txt.Text :=  categoria;
+
+      txt := TListItemText(Objects.FindDrawable('txtTelefono'));
+      txt.Text :=  '111-222-333';
+
+      txt := TListItemText(Objects.FindDrawable('txtUbicacion'));
+      txt.Text :=  direccion;
    end;
 end;
 
@@ -129,10 +145,10 @@ end;
            // Llama al listar los clientes
 procedure TFmPrincipal.ListarClientes;
 begin
-    AddClienteLV(0, 'Makro', 'Dir. Teodoro Planas 4141', 111-222-333);
-    AddClienteLV(0, 'Makro', 'Dir. Teodoro Planas 4141', 111-222-333);
-    AddClienteLV(0, 'Makro', 'Dir. Teodoro Planas 4141', 111-222-333);
-    AddClienteLV(0, 'Makro', 'Dir. Teodoro Planas 4141', 111-222-333);
+    AddClienteLV(0, 'Makro', 'Mayorista', 'Dir. Teodoro Planas 4141', 111-222-333);
+    AddClienteLV(0, 'CEDISA', 'Minorista', 'Dir. Teodoro Planas 4141', 111-222-333);
+    AddClienteLV(0, 'Distribuidora Barelu', 'Distribuidora de Cerveza', 'Dir. Teodoro Planas 4141', 111-222-333);
+    AddClienteLV(0, 'Coca Cola NQN', 'Distribuidora de CocaCola', 'Dir. Teodoro Planas 4141', 111-222-333);
 end;
 
 

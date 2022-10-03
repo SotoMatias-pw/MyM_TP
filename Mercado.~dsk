@@ -1,16 +1,14 @@
 ﻿[Closed Files]
-File_0=TSourceModule,'C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\untClientes.fmx',0,1,1,1,1,0,0,,
-File_1=TSourceModule,'c:\program files (x86)\embarcadero\studio\22.0\source\rtl\common\System.Classes.pas',0,1,2506,63,2525,0,0,,
+File_0=TSourceModule,'C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\untMarcoClient.pas',0,1,1,1,1,0,0,,
 
 [Modules]
-Module0=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\Frame.ClienteCard.pas
+Module0=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\UnitLogin.pas
 Module1=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\untClientes.pas
 Module2=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\untPrincipal.pas
-Module3=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\UnitLogin.pas
-Count=4
+Count=3
 EditWindowCount=1
 
-[C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\Frame.ClienteCard.pas]
+[C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\UnitLogin.pas]
 ModuleType=TSourceModule
 
 [C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\untClientes.pas]
@@ -19,16 +17,12 @@ ModuleType=TSourceModule
 [C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\untPrincipal.pas]
 ModuleType=TSourceModule
 
-[C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\UnitLogin.pas]
-ModuleType=TSourceModule
-
 [EditWindow0]
-ViewCount=4
-CurrentEditView=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\Frame.ClienteCard.pas
+ViewCount=3
+CurrentEditView=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\UnitLogin.pas
 View0=0
 View1=1
 View2=2
-View3=3
 PercentageSizes=1
 Create=1
 Visible=1
@@ -61,21 +55,21 @@ TabDockRightClients=DockSite3=0
 
 [View0]
 CustomEditViewType=TEditView
-Module=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\UnitLogin.pas
-CursorX=18
-CursorY=74
-TopLine=60
+Module=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\untClientes.pas
+CursorX=1
+CursorY=11
+TopLine=40
 LeftCol=1
 Elisions=
 Bookmarks=
-EditViewName=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\UnitLogin.pas
+EditViewName=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\untClientes.pas
 
 [View1]
 CustomEditViewType=TEditView
-Module=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\untPrincipal.pas
-CursorX=8
-CursorY=13
-TopLine=76
+Module=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\UnitLogin.pas
+CursorX=51
+CursorY=79
+TopLine=64
 LeftCol=1
 Elisions=
 Bookmarks=
@@ -83,29 +77,17 @@ EditViewName=Borland.FormDesignerView
 
 [View2]
 CustomEditViewType=TEditView
-Module=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\untClientes.pas
-CursorX=43
-CursorY=3
-TopLine=40
-LeftCol=1
-Elisions=
-Bookmarks=
-EditViewName=Borland.FormDesignerView
-
-[View3]
-CustomEditViewType=TEditView
-Module=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\Frame.ClienteCard.pas
+Module=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\untPrincipal.pas
 CursorX=1
 CursorY=1
 TopLine=1
 LeftCol=1
 Elisions=
 Bookmarks=
-EditViewName=Borland.FormDesignerView
+EditViewName=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\untPrincipal.pas
 
 [Watches]
-Count=1
-Watch0='Application',256,0,18,1,0,'Watches',1
+Count=0
 
 [WatchWindow]
 WatchColumnWidth=120
@@ -245,8 +227,8 @@ SplitPos=111
 
 [PropInspDesignerSelection]
 ArrangeBy=Name
-SelectedItem=Name,
-ExpandedItems=ActiveControl=0,Border=0,BorderIcons=0,Constraints=0,Fill=0,FormFactor=0,"LiveBindings Designer=0",Padding=0,LiveBindings=0,Margins=0,Position=0,RotationCenter=0,Scale=0
+SelectedItem=Action,
+ExpandedItems=Border=0,BorderIcons=0,Constraints=0,Fill=0,FormFactor=0,"LiveBindings Designer=0",Padding=0,LiveBindings=0,Margins=0,Position=0,RotationCenter=0,Scale=0,ActiveControl=0
 
 [frmDesignPreview]
 PercentageSizes=1
