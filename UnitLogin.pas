@@ -23,8 +23,8 @@ type
     Image1: TImage;
     Layout1: TLayout;
     Label1: TLabel;
-    Edit1: TEdit;
-    Entrar: TButton;
+    ed_Usuario: TEdit;
+    bt_Login: TButton;
     CreaCuenta: TLabel;
     Image2: TImage;
     Layout2: TLayout;
@@ -49,13 +49,12 @@ type
     StyleBook1: TStyleBook;
     Rectangle1: TRectangle;
     Rectangle2: TRectangle;
-    Edit10: TEdit;
-    FDConnection1: TFDConnection;
+    ed_Password: TEdit;
     DataSource1: TDataSource;
-    FDQuery1: TFDQuery;
+    QueryL: TFDQuery;
     procedure SQLQuery1ParseInsertSql(var FieldNames: TStrings; SQL: string;
       var BindAllFields: Boolean; var TableName: string);
-    procedure EntrarClick(Sender: TObject);
+    procedure bt_LoginClick(Sender: TObject);
     procedure CreaCuentaClick(Sender: TObject);
   private
   const
@@ -71,7 +70,7 @@ implementation
 
 {$R *.fmx}
 {$R *.SmXhdpiPh.fmx ANDROID}
- uses untPrincipal;
+ uses untPrincipal, moduloDatos_u;
 
 procedure TFLogin.CreaCuentaClick(Sender: TObject);
 var UnitLogin : TFLogin;
@@ -80,11 +79,43 @@ begin
 
 end;
 
-procedure TFLogin.EntrarClick(Sender: TObject);
- var    untPrincipal : TFmPrincipal;
+procedure TFLogin.bt_LoginClick(Sender: TObject);
+ var
+untPrincipal : TFmPrincipal;
+password, passwordSQL : string;
 begin
-  untPrincipal := TFmPrincipal.Create(Application);
-  untPrincipal.Show;
+      if (ed_Usuario.Text = '') then
+        begin
+              ShowMessage('Debe contener un usuario');
+              exit
+        end;
+      if (ed_Password.Text = '') then
+        begin
+              ShowMessage('Debe contener un password');
+              exit
+        end;
+
+          QueryL.Close;
+          QueryL.SQL.Text := 'SELECT * FROM usuarios WHERE usuario=:usuario';
+          QueryL.ParamByName('usuario').AsString := ed_Usuario.Text;
+          QueryL.Open;
+
+      if (QueryL.RecordCount <= 0) then
+        begin
+          ShowMessage('El usuario no esta registrado');
+          exit
+        end;
+
+          passwordSQL := QueryL.FieldByName('password').AsString;
+          password := ed_Password.Text;
+      if (passwordSQL <> password) then
+          ShowMessage('Las contraseñas no coinciden')
+      else
+        begin
+        untPrincipal := TFmPrincipal.Create(Application);
+        untPrincipal.Show;
+        end;
+
 end;
 
 procedure TFLogin.SQLQuery1ParseInsertSql(var FieldNames: TStrings; SQL: string;

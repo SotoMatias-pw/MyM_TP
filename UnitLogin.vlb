@@ -1,9 +1,6 @@
-﻿[FDConnection1]
-LayerNames="select * from  e-commerce "
-
-[Module Settings]
+﻿[Module Settings]
 ModelLayerNames=SQLQuery1;"select * from  e-commerce ";"select * from tienda";select;*;from;tienda
 
 []
-LayerNames="select * from tienda"
+LayerNames="select * from  e-commerce "
 
