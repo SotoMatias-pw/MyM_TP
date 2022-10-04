@@ -1,27 +1,26 @@
 ﻿[Closed Files]
-File_0=TSourceModule,'C:\Users\alesa\Desktop\.-.--\mobile\UnitLogin.pas',0,1,71,69,89,0,0,,
-File_1=TSourceModule,'c:\program files (x86)\embarcadero\studio\22.0\source\fmx\FMX.TabControl.pas',0,1,311,1,329,0,0,,
-File_2=TSourceModule,'c:\program files (x86)\embarcadero\studio\22.0\source\fmx\FMX.Forms.pas',0,1,1137,1,1155,0,0,,
+File_0=TSourceModule,'C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\UnitLogin.pas',0,1,64,51,79,0,0,,
+File_1=TSourceModule,'C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\untMarcoClient.pas',0,1,1,1,1,0,0,,
 
 [Modules]
-Module0=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\untPrincipal.pas
-Module1=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\untClientes.pas
-Module2=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\UnitLogin.pas
+Module0=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\untClientes.pas
+Module1=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\untPrincipal.pas
+Module2=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\Frames\Frame.ClienteCard.pas
 Count=3
 EditWindowCount=1
-
-[C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\untPrincipal.pas]
-ModuleType=TSourceModule
 
 [C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\untClientes.pas]
 ModuleType=TSourceModule
 
-[C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\UnitLogin.pas]
+[C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\untPrincipal.pas]
+ModuleType=TSourceModule
+
+[C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\Frames\Frame.ClienteCard.pas]
 ModuleType=TSourceModule
 
 [EditWindow0]
 ViewCount=3
-CurrentEditView=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\untPrincipal.pas
+CurrentEditView=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\untClientes.pas
 View0=0
 View1=1
 View2=2
@@ -49,7 +48,7 @@ RightPanelClients=DockSite2
 RightPanelData=00000800010100000000EC1100000000000001D0070000000000000100000000BD1F000009000000446F636B5369746532FFFFFFFF
 BottomPanelSize=0
 BottomPanelClients=MessageView,DockSite1
-BottomPanelData=000008000102020000000F0000004D65737361676556696577466F726D09000000446F636B53697465311534000000000000022806000000000000FFFFFFFF
+BottomPanelData=000008000102020000000F0000004D65737361676556696577466F726D09000000446F636B53697465315C44000000000000026D0400000000000001000000005C4400000F0000004D65737361676556696577466F726DFFFFFFFF
 BottomMiddlePanelSize=0
 BottomMiddlePanelClients=DockSite0,GraphDrawingModel
 BottomMiddelPanelData=0000080001020200000009000000446F636B536974653010000000477261706844726177696E67566965779A1D00000000000002F806000000000000FFFFFFFF
@@ -57,10 +56,10 @@ TabDockRightClients=DockSite3=0
 
 [View0]
 CustomEditViewType=TEditView
-Module=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\UnitLogin.pas
-CursorX=1
-CursorY=93
-TopLine=90
+Module=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\untPrincipal.pas
+CursorX=25
+CursorY=89
+TopLine=145
 LeftCol=1
 Elisions=
 Bookmarks=
@@ -68,10 +67,10 @@ EditViewName=Borland.FormDesignerView
 
 [View1]
 CustomEditViewType=TEditView
-Module=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\untPrincipal.pas
+Module=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\untClientes.pas
 CursorX=1
-CursorY=94
-TopLine=92
+CursorY=85
+TopLine=1
 LeftCol=1
 Elisions=
 Bookmarks=
@@ -79,18 +78,17 @@ EditViewName=Borland.FormDesignerView
 
 [View2]
 CustomEditViewType=TEditView
-Module=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\untClientes.pas
+Module=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\Frames\Frame.ClienteCard.pas
 CursorX=1
-CursorY=36
-TopLine=34
+CursorY=1
+TopLine=1
 LeftCol=1
 Elisions=
 Bookmarks=
 EditViewName=Borland.FormDesignerView
 
 [Watches]
-Count=1
-Watch0='Application',256,0,18,1,0,'Watches',1
+Count=0
 
 [WatchWindow]
 WatchColumnWidth=120
@@ -178,13 +176,13 @@ Docked=1
 State=0
 Left=0
 Top=28
-Width=2765
-Height=1415
+Width=9882
+Height=810
 MaxLeft=-1
 MaxTop=-1
-ClientWidth=2765
-ClientHeight=1415
-TBDockHeight=1415
+ClientWidth=9882
+ClientHeight=810
+TBDockHeight=810
 LRDockWidth=2765
 Dockable=1
 StayOnTop=0
@@ -198,11 +196,11 @@ State=0
 Left=0
 Top=0
 Width=2000
-Height=8187
+Height=8159
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
-ClientHeight=8187
+ClientHeight=8159
 TBDockHeight=7157
 LRDockWidth=2000
 Dockable=1
@@ -226,12 +224,12 @@ TBDockHeight=8187
 LRDockWidth=1897
 Dockable=1
 StayOnTop=0
-SplitPos=111
+SplitPos=127
 
 [PropInspDesignerSelection]
 ArrangeBy=Name
-SelectedItem=Text,
-ExpandedItems=Anchors=0,ItemAppearance=0,ItemAppearanceObjects=0,ItemSpaces=0,LiveBindings=0,"LiveBindings Designer=0",Margins=0,NativeOptions=0,Padding=0,Position=0,RotationCenter=0,Scale=0,Size=0,Touch=0,TouchTargetExpansion=0,Touch.GestureManager=0,Touch.Gestures=1,Touch.InteractiveGestures=0,Touch.Gestures.Standard=1,StyledSettings=0,TextSettings=0,Corners=0,Fill=1,Sides=0,Stroke=0,Fill.Bitmap=0,Fill.Resource=0,Fill.Bitmap.Image=0,Stroke.Bitmap=0,Stroke.Resource=0,Constraints=0,FormFactor=0,SystemStatusBar=0,Border=0,BorderIcons=0
+SelectedItem=Align,
+ExpandedItems=ActiveControl=0,Border=0,BorderIcons=0,Constraints=0,Fill=0,FormFactor=0,"LiveBindings Designer=0",Padding=0,Anchors=0,Font=1,PlaceOffset=0,Objects=0,txtNombre=0,imgLocal=0,imgTel=0,imgUbic=0,txtCategoria=0,txtTelefono=0,txtUbicacion=0,LiveBindings=0,Margins=1,Position=1,RotationCenter=0,Scale=0,Size=1,StyledSettings=1,TextSettings=0,Touch=0,TouchTargetExpansion=0,TextSettings.Font=0,TextSettings.FontColorForState=0,TextSettings.Font.Style=0,"LiveBindings Designer.Element Layers=0",Touch.InteractiveGestures=0,BitmapMargins=0,Sides=0,FocusedShadow=0,HotShadow=0,FocusedShadow.Offset=0,NormalShadow=0,NormalShadow.Offset=0,PressedShadow=0,Shadow=0,HotShadow.Offset=0,Corners=0,Fill.Bitmap=0,Fill.Resource=0,Stroke=0,Fill.Bitmap.Image=0,Font.Style=0
 
 [frmDesignPreview]
 PercentageSizes=1
@@ -242,11 +240,11 @@ State=0
 Left=0
 Top=0
 Width=2000
-Height=4959
+Height=7802
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
-ClientHeight=4959
+ClientHeight=7802
 TBDockHeight=5962
 LRDockWidth=2507
 Dockable=1
@@ -428,11 +426,11 @@ State=0
 Left=0
 Top=0
 Width=2000
-Height=4959
+Height=7802
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
-ClientHeight=4959
+ClientHeight=7802
 TBDockHeight=4876
 LRDockWidth=7154
 Dockable=1
@@ -680,14 +678,14 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=8
-Top=8
+Left=4
+Top=29
 Width=2000
-Height=8187
+Height=8159
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
-ClientHeight=8187
+ClientHeight=8159
 TBDockHeight=8187
 LRDockWidth=2000
 Dockable=1

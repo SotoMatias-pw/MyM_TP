@@ -43,16 +43,24 @@ type
     ActionL: TAction;
     ActionR: TAction;
     Image1: TImage;
+    imgLocal: TImage;
+    imgUbic: TImage;
+    imgTel: TImage;
     procedure ImgMenuClick(Sender: TObject);
     procedure backMenuClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure Image1Click(Sender: TObject);
+    procedure Rectangle1Click(Sender: TObject);
+    procedure FormShow(Sender: TObject);
     procedure lvListaStoreItemClick(const Sender: TObject;
       const AItem: TListViewItem);
-    procedure Rectangle1Click(Sender: TObject);
+
 
   private
     procedure OpenMenu(ind: boolean);
+    procedure AddClienteLV(id_cliente: integer; nombre, categoria, direccion: string;
+      telefono: double);
+    procedure ListarClientes;
     { Private declarations }
   public
     { Public declarations }
@@ -62,8 +70,55 @@ var
   FmPrincipal: TFmPrincipal;
 
 implementation
- uses UnitLogin, untClientes, untMarcoClient;
+ uses UnitLogin, untClientes;
 {$R *.fmx}
+
+// Se agregan valores de Lista clientes
+procedure TFmPrincipal.AddClienteLV(id_cliente: integer;
+                                    nombre, categoria, direccion: string;
+                                    telefono: double);
+
+     //Camptura la imagen que tiene la vista
+     //COMIENZA
+var
+   img: TListItemImage;
+   txt: TListItemText;
+
+begin
+   with lvListaStore.Items.Add do
+   begin
+      height := 120;
+      Tag := id_cliente;
+
+      // Devuelve y captura los item IMG
+
+      img := TListItemImage(Objects.FindDrawable('imgLocal'));
+      img.Bitmap := imgLocal.Bitmap;
+
+      img := TListItemImage(Objects.FindDrawable('imgTel'));
+      img.Bitmap := imgTel.Bitmap;
+
+      img := TListItemImage(Objects.FindDrawable('imgUbic'));
+      img.Bitmap := imgUbic.Bitmap;
+
+      //Devuelve y captura las caracteristicas de cada item IMG
+
+      txt := TListItemText(Objects.FindDrawable('txtNombre'));
+      txt.Text :=  nombre;
+
+      txt := TListItemText(Objects.FindDrawable('txtCategoria'));
+      txt.Text :=  categoria;
+
+      txt := TListItemText(Objects.FindDrawable('txtTelefono'));
+      txt.Text :=  '111-222-333';
+
+      txt := TListItemText(Objects.FindDrawable('txtUbicacion'));
+      txt.Text :=  direccion;
+   end;
+end;
+
+ // TERMINA
+
 
 procedure TFmPrincipal.OpenMenu(ind: boolean);
 begin
@@ -76,7 +131,7 @@ begin
     untClientes := TfmClientes.Create(Application);
     untClientes.Show;
 end;
-
+          // Funcion de icono flecha backMenu
 procedure TFmPrincipal.backMenuClick(Sender: TObject);
 begin
     OpenMenu(False);
@@ -90,7 +145,32 @@ procedure TFmPrincipal.FormCreate(Sender: TObject);
 begin
     RecMenu.Visible := false;
 end;
+           // Llama al listar los clientes
+procedure TFmPrincipal.ListarClientes;
+begin
+    AddClienteLV(0, 'Makro', 'Mayorista', 'Dir. Teodoro Planas 4141', 111-222-333);
+    AddClienteLV(0, 'CEDISA', 'Minorista', 'Dir. Teodoro Planas 4141', 111-222-333);
+    AddClienteLV(0, 'Distribuidora Barelu', 'Distribuidora de Cerveza', 'Dir. Teodoro Planas 4141', 111-222-333);
+    AddClienteLV(0, 'Coca Cola NQN', 'Distribuidora de CocaCola', 'Dir. Teodoro Planas 4141', 111-222-333);
+    AddClienteLV(0, 'Makro', 'Mayorista', 'Dir. Teodoro Planas 4141', 111-222-333);
+    AddClienteLV(0, 'CEDISA', 'Minorista', 'Dir. Teodoro Planas 4141', 111-222-333);
+    AddClienteLV(0, 'Distribuidora Barelu', 'Distribuidora de Cerveza', 'Dir. Teodoro Planas 4141', 111-222-333);
+    AddClienteLV(0, 'Coca Cola NQN', 'Distribuidora de CocaCola', 'Dir. Teodoro Planas 4141', 111-222-333);
+end;
 
+
+procedure TFmPrincipal.lvListaStoreItemClick(const Sender: TObject;
+  const AItem: TListViewItem);
+begin
+    if NOT Assigned(fmClientes) then
+      Application.CreateForm(TfmClientes, fmClientes);
+
+end;
+
+procedure TFmPrincipal.FormShow(Sender: TObject);
+begin
+  ListarClientes;
+end;
 
 procedure TFmPrincipal.Image1Click(Sender: TObject);
 begin
@@ -109,13 +189,5 @@ begin
      RecMenu.Tag := 1;
 end;
 
-procedure TFmPrincipal.lvListaStoreItemClick(const Sender: TObject;
-  const AItem: TListViewItem);
-begin
-   if not Assigned(fmClientes) then
-      Application.CreateForm(TfmClientes, fmClientes);
-
-      fmClientes.Show;
-end;
 
 end.
