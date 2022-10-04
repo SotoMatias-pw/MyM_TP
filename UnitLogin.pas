@@ -96,6 +96,7 @@ begin
         end;
 
           QueryL.Close;
+          QueryL.ConnectionName:= DataModule1.nombre_de_la_conexion;
           QueryL.SQL.Text := 'SELECT * FROM usuarios WHERE usuario=:usuario';
           QueryL.ParamByName('usuario').AsString := ed_Usuario.Text;
           QueryL.Open;

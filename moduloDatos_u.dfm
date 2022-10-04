@@ -1,13 +1,23 @@
 object DataModule1: TDataModule1
-  Height = 480
-  Width = 640
+  OnCreate = DataModuleCreate
+  Height = 237
+  Width = 389
+  PixelsPerInch = 96
   object Conexion: TFDConnection
+    ConnectionName = 'Conexion'
     Params.Strings = (
-      'OpenMode=ReadWrite'
-      'Database=C:\PuenteWeb\MyM_TP\DataBase-Tienda\e-commerce.db'
+      
+        'Database=C:\Users\alesa\Desktop\.-.--\mobile\MyM_TP\DataBase-Tie' +
+        'nda\e-commerce.db'
+      'LockingMode=Normal'
       'DriverID=sQLite')
-    Connected = True
+    LoginPrompt = False
+    BeforeConnect = ConexionBeforeConnect
     Left = 80
     Top = 40
+  end
+  object FDPhysSQLiteDriverLink: TFDPhysSQLiteDriverLink
+    Left = 192
+    Top = 39
   end
 end
