@@ -6,9 +6,10 @@
     <PropertyGroup>
         <DeviceId Condition="'$(Platform)'=='Android'">ZE222NK5LF</DeviceId>
         <DeviceId Condition="'$(Platform)'=='Android64'"/>
+        <DeviceId Condition="'$(Platform)'=='iOSDevice64'"/>
     </PropertyGroup>
     <ItemGroup Condition="'$(Platform)'=='Win64'"/>
-    <ItemGroup Condition="'$(Platform)'=='Linux64'"/>
+    <ItemGroup Condition="'$(Platform)'=='iOSDevice64'"/>
     <ItemGroup Condition="'$(Platform)'=='Win32'">
         <DeployFile Include="Win32\Debug\Mercado.exe" Condition="'$(Config)'=='Debug'">
             <RemoteDir>Mercado\</RemoteDir>
@@ -226,15 +227,6 @@
             <RemoteDir>Mercado\library\lib\armeabi-v7a\</RemoteDir>
             <RemoteName>gdbserver</RemoteName>
             <DeployClass>AndroidGDBServer</DeployClass>
-            <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="..\service\Android\Debug\libServ.so" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>Mercado\library\lib\armeabi-v7a\</RemoteDir>
-            <RemoteName>libServ.so</RemoteName>
-            <DeployClass>AndroidServiceOutput</DeployClass>
             <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>

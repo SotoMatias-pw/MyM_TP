@@ -7,7 +7,12 @@ uses
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.Objects,
   FMX.Layouts, FMX.Controls.Presentation, FMX.StdCtrls, FMX.Edit,
   FMX.ListView.Types, FMX.ListView.Appearances, FMX.ListView.Adapters.Base,
-  FMX.ListView, System.Actions, FMX.ActnList, FMX.Gestures;
+  FMX.ListView, System.Actions, FMX.ActnList, FMX.Gestures, FireDAC.Stan.Intf,
+  FireDAC.Stan.Option, FireDAC.Stan.Param, FireDAC.Stan.Error, FireDAC.DatS,
+  FireDAC.Phys.Intf, FireDAC.DApt.Intf, FireDAC.Stan.Async, FireDAC.DApt,
+  Data.DB, FireDAC.Comp.DataSet, FireDAC.Comp.Client, Datasnap.Provider,
+  Datasnap.DBClient, System.Rtti, System.Bindings.Outputs, Fmx.Bind.Editors,
+  Data.Bind.EngExt, Fmx.Bind.DBEngExt, Data.Bind.Components, Data.Bind.DBScope;
 
 type
   TFmPrincipal = class(TForm)
@@ -46,6 +51,24 @@ type
     imgLocal: TImage;
     imgUbic: TImage;
     imgTel: TImage;
+    QueryD: TFDQuery;
+    DataSetProvider1: TDataSetProvider;
+    ClientDataSet1: TClientDataSet;
+    QueryDid: TFDAutoIncField;
+    QueryDrazon_social: TStringField;
+    QueryDdomicilio: TStringField;
+    QueryDlocalidad: TStringField;
+    QueryDtelefono: TIntegerField;
+    QueryDemail: TStringField;
+    ClientDataSet1id: TAutoIncField;
+    ClientDataSet1razon_social: TStringField;
+    ClientDataSet1domicilio: TStringField;
+    ClientDataSet1localidad: TStringField;
+    ClientDataSet1telefono: TIntegerField;
+    ClientDataSet1email: TStringField;
+    BindSourceDB1: TBindSourceDB;
+    BindingsList1: TBindingsList;
+    LinkFillControlToField1: TLinkFillControlToField;
     procedure ImgMenuClick(Sender: TObject);
     procedure backMenuClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
@@ -148,14 +171,7 @@ end;
            // Llama al listar los clientes
 procedure TFmPrincipal.ListarClientes;
 begin
-    AddClienteLV(0, 'Makro', 'Mayorista', 'Dir. Teodoro Planas 4141', 111-222-333);
-    AddClienteLV(0, 'CEDISA', 'Minorista', 'Dir. Teodoro Planas 4141', 111-222-333);
-    AddClienteLV(0, 'Distribuidora Barelu', 'Distribuidora de Cerveza', 'Dir. Teodoro Planas 4141', 111-222-333);
-    AddClienteLV(0, 'Coca Cola NQN', 'Distribuidora de CocaCola', 'Dir. Teodoro Planas 4141', 111-222-333);
-    AddClienteLV(0, 'Makro', 'Mayorista', 'Dir. Teodoro Planas 4141', 111-222-333);
-    AddClienteLV(0, 'CEDISA', 'Minorista', 'Dir. Teodoro Planas 4141', 111-222-333);
-    AddClienteLV(0, 'Distribuidora Barelu', 'Distribuidora de Cerveza', 'Dir. Teodoro Planas 4141', 111-222-333);
-    AddClienteLV(0, 'Coca Cola NQN', 'Distribuidora de CocaCola', 'Dir. Teodoro Planas 4141', 111-222-333);
+
 end;
 
 

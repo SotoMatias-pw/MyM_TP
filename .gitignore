@@ -1,0 +1,6 @@
+*.so
+*.exe
+*.dcu
+\__history\*
+*.*~*
+*\Android\Debug*
